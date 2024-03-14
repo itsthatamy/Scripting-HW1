@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>ITEC345 HW1 Introduction</title>
+  
+<style>
+  button {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid #11112b;
+  background-color: #a24b68;
+  color: #ffeadd;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 10px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+</style>
+  
+</head>
+<body>
+
+<h2>Welcome User! What's your name?</h2>
+
+<button type="button">Current player: Amy</button>
+  
+<script>
+  const button = document.querySelector("button");
+
+button.addEventListener("click", updateName);
+
+function updateName() {
+	const name = prompt("Enter a new player name");
+  button.textContent = `Current player: ${name}`;
+}
+</script>
+  
+</body>
+</html>
